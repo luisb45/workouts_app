@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { TextField, Select, MenuItem, InputLabel, FormControl, Button, Box, Paper, Typography, Card } from '@mui/material'
+import { TextField, Select, MenuItem, InputLabel, FormControl, Button, Typography, Card } from '@mui/material'
 import { useDispatch, useSelector} from 'react-redux';
 
 
@@ -45,7 +45,7 @@ function Form({currentId, setCurrentId}) {
         <form onSubmit={handleSubmit}>
             <Typography style={cardTitle} variant='h6'>{currentId ? 'Edit' : 'Create'} a Workout</Typography>
             <TextField variant='standard' style={styleForm} fullWidth name='title' label='Workout Title' value={postData.title} onChange={(e) => setPostData({ ...postData, title: e.target.value})} /> <br />
-            <TextField variant='standard' style={styleForm} fullWidth name='exercises' label='Exercises' value={postData.exercises} onChange={(e) => setPostData({...postData, exercises: e.target.value.split(',')})} /> <br />
+            <TextField variant='standard' style={styleForm} fullWidth name='exercises' label='Exercises (seperate with a comma)' value={postData.exercises} onChange={(e) => setPostData({...postData, exercises: e.target.value.split(',')})} /> <br />
             <FormControl variant='standard' fullWidth style={styleForm}>
             <InputLabel>Exercise Type</InputLabel>
             <Select name='exerciseType' label='Exercise Type' value={postData.exerciseType} onChange={(e) => setPostData({...postData, exerciseType: e.target.value})}>

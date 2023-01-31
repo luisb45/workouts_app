@@ -6,3 +6,9 @@ export const styleBar = {
     justifyContent: 'center',
     alignItems: 'center',
 }
+
+export const styleContainer = {
+    backgroundColor: 'white',
+    marginTop: -15,
+    marginBottom: 0,
+}
