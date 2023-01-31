@@ -2,10 +2,12 @@ import React, {useState, useEffect} from 'react';
 import { AppBar, Container, Grid } from '@mui/material';
 import { useDispatch } from 'react-redux';
 
-import {getPosts } from './actions/posts'
+import {getPosts} from './actions/posts'
+import { getUsers } from './actions/users';
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import UserForm from './components/Users/Form';
+import User from './components/Users/User';
 import styles from './styles.css'
 import { styleBar, styleContainer } from './styles';
 
@@ -16,6 +18,10 @@ function App() {
   useEffect(() => {
     dispatch(getPosts());
   }, [currentId, dispatch]);
+
+  useEffect(() => {
+    dispatch(getUsers());
+  }, [dispatch]);
 
   return (
     <Container style={styleContainer}>
@@ -30,7 +36,7 @@ function App() {
             {/* <h3>Arms | Chest | Back | Legs</h3>  */}
           </Grid>
               <Grid item xs={12} sm={5}>
-                <UserForm />
+                <UserForm /><User />
               </Grid>
            <Grid item xs={12} sm={7}>
               <Posts setCurrentId={setCurrentId} />

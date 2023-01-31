@@ -9,6 +9,4 @@ export const styleBar = {
 
 export const styleContainer = {
     backgroundColor: 'white',
-    marginTop: -15,
-    marginBottom: 0,
 }
