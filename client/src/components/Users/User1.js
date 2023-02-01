@@ -10,14 +10,14 @@ function User1({ user, setUserCurrentId}) {
     <Card style={cardStyle} elevation={5}>
       <Typography style={cardTitle} variant='h6'>User</Typography>
       <CardContent>
-        <Typography>{user.username}</Typography>
-        <Typography>{user.email}</Typography>
+        <Typography>Username: {user.username}</Typography>
+        <Typography>Email: {user.email}</Typography>
         <Button style={styleEdit} onClick={() => setUserCurrentId(user._id)}>
             <EditIcon /> 
           </Button>
           <div style={userButtons}>
-        <Button variant='outlined' style={styleButton}>Likes</Button>
-        <Button variant='outlined' style={styleButton}>Posts</Button>
+        <Button variant='outlined' style={styleButton} disabled='true'>Likes</Button>
+        <Button variant='outlined' style={styleButton} disabled='true'>Posts</Button>
         </div>
       </CardContent>
      

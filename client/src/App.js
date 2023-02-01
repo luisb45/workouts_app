@@ -36,7 +36,7 @@ function App() {
                 <UserForm userCurrentId={userCurrentId} setCurrentId={setCurrentId}/>
               </Grid>
           <Grid item xs={12} sm={7}>
-            <Form userCurrentId={userCurrentId} setUserCurrentId={setUserCurrentId}/>
+            <Form currentId={currentId} setCurrentId={setCurrentId}/>
             {/* <h3>Arms | Chest | Back | Legs</h3>  */}
           </Grid>
               <Grid item xs={12} sm={5}>

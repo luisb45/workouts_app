@@ -35,8 +35,7 @@ function UserForm({ userCurrentId, setUserCurrentId}) {
   
 
   return (
-    <div>
-    {userCurrentId ?  <Card style={cardStyle} elevation={5}>
+    <Card style={cardStyle} elevation={5}>
         <form onSubmit={handleSubmit}>
             <Typography style={cardTitle} variant='h6'>{userCurrentId ? 'Edit User' : 'SignUp / LogIn'}</Typography>
             <TextField variant='standard' style={styleForm} fullWidth name='username' label='UserName' value={userData.username} onChange={(e) => setUserData({ ...userData, username: e.target.value })}/> <br />
@@ -49,9 +48,7 @@ function UserForm({ userCurrentId, setUserCurrentId}) {
             
         </form>
         
-    </Card> : null}
-    
-   </div>
+    </Card> 
   )
 }
 
