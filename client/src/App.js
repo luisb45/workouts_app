@@ -13,6 +13,7 @@ import { styleBar, styleContainer } from './styles';
 
 function App() {
   const [currentId, setCurrentId] = useState(null);
+  const [userCurrentId, setUserCurrentId] = useState(null);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -31,12 +32,15 @@ function App() {
       </AppBar>
       <Container>
         <Grid container justify='space-between' alignItems='stretch' spacing={4}>
-         <Grid item xs={12} sm={7}>
-            <Form currentId={currentId} setCurrentId={setCurrentId}/>
+          <Grid item xs={12} sm={5}>
+                <UserForm userCurrentId={userCurrentId} setCurrentId={setCurrentId}/>
+              </Grid>
+          <Grid item xs={12} sm={7}>
+            <Form userCurrentId={userCurrentId} setUserCurrentId={setUserCurrentId}/>
             {/* <h3>Arms | Chest | Back | Legs</h3>  */}
           </Grid>
               <Grid item xs={12} sm={5}>
-                <UserForm /><User />
+              <User userCurrentId={userCurrentId} setUserCurrentId={setUserCurrentId}/>
               </Grid>
            <Grid item xs={12} sm={7}>
               <Posts setCurrentId={setCurrentId} />

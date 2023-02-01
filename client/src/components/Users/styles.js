@@ -45,3 +45,9 @@ export const styleDelete = {
     marginBottom: '5px',
     color: 'red'
 };
+
+export const userButtons = {
+    display: 'flex',
+    justifyContent: 'space-between',
+    paddingTop: '10px'
+}

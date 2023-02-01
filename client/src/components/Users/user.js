@@ -1,12 +1,22 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 
-function User() {
+import { Grid, LinearProgress } from '@mui/material';
+
+import User1 from './User1';
+
+function User({ setUserCurrentId }) {
     const users = useSelector((state) => state.users)
-    console.log(users)
+  
   return (
-    <div></div>
-  )
+    !users.length ? <LinearProgress /> : (
+      <Grid>
+      {users.map((user) => (
+        <User1 user={user} setUserCurrentId={setUserCurrentId}/>
+      ))}
+    </Grid>
+    )
+  );
 }
 
 export default User
