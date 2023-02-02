@@ -20,6 +20,10 @@ Project planning trello board: https://trello.com/b/C43XC93q/mern-project
 
 Webpage link: https://workoutapp-frontend.onrender.com/
 
+### Unsolved Problems
+- User Login needs work
+- Need to implement user in post creater
+- need to finish user routes
 
 
 
