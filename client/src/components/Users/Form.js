@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import {cardStyle, cardTitle, styleForm, styleButton } from './styles'
 import { createUser, updateUser } from '../../actions/users';
-import User from './User';
+
 
 
 function UserForm({ userCurrentId, setUserCurrentId}) {
