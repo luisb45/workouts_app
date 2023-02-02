@@ -7,7 +7,7 @@ import { getUsers } from './actions/users';
 import Posts from './components/Posts/Posts'
 import Form from './components/Form/Form'
 import UserForm from './components/Users/Form';
-import User from './components/Users/User';
+import User from './components/Users/user';
 import styles from './styles.css'
 import { styleBar, styleContainer } from './styles';
 
