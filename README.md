@@ -18,12 +18,10 @@ as well as experiment with new workouts from other users.
 ### Getting Started:
 Project planning trello board: https://trello.com/b/C43XC93q/mern-project
 
-Webpage link:
+Webpage link: https://workoutapp-frontend.onrender.com/
 
 
-### Unsolved Problems: 
 
-Deployment Issue
 
 ### Future Enchancements:
 - User Authentication
