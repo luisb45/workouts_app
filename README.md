@@ -2,7 +2,7 @@
 
 ## Introduction:
 
-A React app where users can post and view workout from others. Indended for those who would want to share their workout
+A React app where users can post and view workout from others. Indended for those who would want to share their workouts
 as well as experiment with new workouts from other users. 
 
 ### Build Using
@@ -22,7 +22,7 @@ Webpage link: https://workoutapp-frontend.onrender.com/
 
 ### Unsolved Problems
 - User Login needs work
-- Need to implement user in post creater
+- Need to implement user in post creator
 - need to finish user routes
 
 
